@@ -1,0 +1,24 @@
+﻿@model Student_Management.Model.Models.VMCourse
+
+<form method="post" asp-action="AddCourse">
+
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-dark pl-3">
+				Add Course
+			</h2>		<hr />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="course.CourseId"></label>
+			<select asp-for="course.CourseId" asp-items="@Model.courseList" class="form-select">
+				<option disabled selected >Select Course</option>
+			</select>
+			<span asp-validation-for="course.CourseId" class="text-danger"></span>
+		</div>	
+
+		<button type="submit" class="btn btn-dark" style="width:150px">Add</button>
+
+		<a asp-controller="Student" asp-action="Index" class="btn btn-secondary" style="width:150px;">Back To List</a>
+	</div>
+</form>

@@ -1,0 +1,64 @@
+﻿@model Student_Management.Model.Models.Student
+
+<form method="post" asp-action="AddStudent">
+
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-dark pl-3">
+				Add Student
+			</h2>		<hr />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Name"></label>
+			<input asp-for="Name" class="form-control" required />
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="RollNo"></label>
+			<input asp-for="RollNo" class="form-control" required min="1" />
+			<span asp-validation-for="RollNo" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" class="form-control" required />
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Address"></label>
+			<input asp-for="Address" class="form-control" required />
+			<span asp-validation-for="Address" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="State"></label>
+			<input asp-for="State" class="form-control" required />
+			<span asp-validation-for="State" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="City"></label>
+			<input asp-for="City" class="form-control" required />
+			<span asp-validation-for="City" class="text-danger"></span>
+		</div>
+		
+		<div class="mb-3">
+			<label asp-for="ZipCode"></label>
+			<input asp-for="ZipCode" class="form-control" required />
+			<span asp-validation-for="ZipCode" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="ContactNo"></label>
+			<input asp-for="ContactNo" class="form-control" required />
+			<span asp-validation-for="ContactNo" class="text-danger"></span>
+		</div>
+
+		<button type="submit" class="btn btn-dark" style="width:150px">Add</button>
+
+		<a asp-controller="Student" asp-action="Index" class="btn btn-secondary" style="width:150px;">Back To List</a>
+	</div>
+</form>

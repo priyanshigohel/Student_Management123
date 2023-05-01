@@ -1,0 +1,123 @@
+﻿@model Student_Management.Model.Models.Admindb
+
+<form asp-action="Login" method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-dark">Admin Login</h2>
+			<hr />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="AdminEmail"></label>
+			<input asp-for="AdminEmail" class="form-control" required />
+			<span asp-validation-for="AdminEmail" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="AdminPassword"></label>
+			<input type="password" asp-for="AdminPassword" class="form-control" required />
+			<span asp-validation-for="AdminPassword" class="text-danger"></span>
+		</div>
+
+		<button type="submit" class="btn btn-dark" style="width:150px">Login</button>
+
+	</div>
+</form>
+
+
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link href="~/login/css/main.css" rel="stylesheet" />
+	<link href="~/login/css/util.css" rel="stylesheet" />
+
+	<link href="~/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<img src="~/login/images/icons/favicon.ico" />
+	<link href="~/login/vendor/animate/animate.css" rel="stylesheet" />
+
+	<link href="~/login/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" />
+	<link href="~/login/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/login/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<link href="~/login/vendor/select2/select2.css" rel="stylesheet" />
+	<link href="~/login/vendor/select2/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<form asp-action="Login" method="post">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					
+					<img src="~/login/images/img-01.png" alt="IMG" />
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Admin Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<label asp-for="AdminEmail"></label>
+						<input asp-for="AdminEmail" class="form-control" required />
+						<span asp-validation-for="AdminEmail" class="text-danger"></span>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<label asp-for="AdminPassword"></label>
+						<input type="password" asp-for="AdminPassword" class="form-control" required />
+						<span asp-validation-for="AdminPassword" class="text-danger"></span>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">
+							Login
+						</button>
+					</div>	
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="~/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="~/login/vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="~/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="~/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="~/login/vendor/select2/select2.min.js"></script>
+
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	
+	<script src="~/login/js/main.js"></script>
+	</form>
+</body>
+
+</html>*@
+
+
+
+
+
+		
+
+

@@ -1,0 +1,29 @@
+﻿@model Student_Management.Model.Models.Course
+
+<form method="post" asp-action="EditCourse">
+	<input asp-for="CourseId" hidden />
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary pl-3">
+				Update Course
+			</h2>		<hr />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="CourseName"></label>
+			<input asp-for="CourseName" class="form-control" required />
+			<span asp-validation-for="CourseName" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="CoursePrice"></label>
+			<input asp-for="CoursePrice" class="form-control" required />
+			<span asp-validation-for="CoursePrice" class="text-danger"></span>
+		</div>
+
+
+		<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+
+		<a asp-controller="Course" asp-action="CourseIndex" class="btn btn-secondary" style="width:150px;">Back To List</a>
+	</div>
+</form>
